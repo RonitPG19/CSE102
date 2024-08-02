@@ -15,5 +15,5 @@ def hello1():
         return render_template('Veiw-Data.html',fullname=fullname)
 
 @app.errorhandler(404)
-def page_not_found():
-    return render_template('404.html')
+def not_found(e): 
+  return render_template("404.html")
